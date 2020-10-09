@@ -10,7 +10,7 @@ This website will allow you to review a video game then send the users review to
 
 ## Wireframes
 
-(https://www.figma.com/file/a5WDoRcLpn7oOwLMVitF1p/Untitled?node-id=12%3A24)
+(https://docs.google.com/drawings/d/1b4mN5cVzChPwg0c8gfxS8QR16C2ZOt6Zl9j8gpv6UOo/edit?usp=sharing)
 
 
 ## Component Hierarchy
@@ -23,7 +23,7 @@ This website will allow you to review a video game then send the users review to
         {
             "id": "recafmqU7i9BDPXws",
             "fields": {
-                "Game Title": "Halo 3",
+                "gameTitle": "Halo 3",
                 "Review": "The game is long but is full of action during the whole 40 hours it takes to beat all levels.",
                 "Author": "Nathan Wigen",
                 "Status": "2020-10-08T21:51:12.000Z"
@@ -54,8 +54,8 @@ This website will allow you to review a video game then send the users review to
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 9| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 10| Project Approval | Incomplete
+|July 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|July 10| Project Approval | Complete
 |July 11| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |July 12| Pseudocode / actual code | Incomplete
 |July 13| Initial Clickable Model  | Incomplete
@@ -67,8 +67,9 @@ This website will allow you to review a video game then send the users review to
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with React | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| CSS Styling | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
