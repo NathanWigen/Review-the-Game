@@ -14,7 +14,7 @@ This website will allow you to review a video game then send the users review to
 
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+(https://app.diagrams.net/#G1Ig9V1jW8k798vFb0EAMgy2-qvAtVDVEF)
 
 ## API and Data Sample
 ```
@@ -78,8 +78,17 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ### Strengths:
 
-### Weaknesses:
+- Site is going to be a quick set up.
+
+### Weaknesses: 
+
+- Not time boxing component that need to be done during the day.
 
 ### Opportunities:
 
-### Threats:
+- I have a lot of resources that I can use 
+
+### Threats:  
+
+- Wanting to make the project to look perfect in design rather than functionality.
+- Not following Wireframes.
