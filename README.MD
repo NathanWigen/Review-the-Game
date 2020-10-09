@@ -10,11 +10,10 @@ This website will allow you to review a video game then send the users review to
 
 ## Wireframes
 
-(https://docs.google.com/drawings/d/1b4mN5cVzChPwg0c8gfxS8QR16C2ZOt6Zl9j8gpv6UOo/edit?usp=sharing)
-
+(https://www.figma.com/file/a5WDoRcLpn7oOwLMVitF1p/Untitled?node-id=12%3A24)
 
 ## Component Hierarchy
-(https://app.diagrams.net/#G1Ig9V1jW8k798vFb0EAMgy2-qvAtVDVEF)
+(https://docs.google.com/drawings/d/1b4mN5cVzChPwg0c8gfxS8QR16C2ZOt6Zl9j8gpv6UOo/edit?usp=sharing)
 
 ## API and Data Sample
 ```
