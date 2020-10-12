@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
-import { baseUrl } from "./constants"
+// import { baseUrl } from "./constants"
 import UpdateReview from "./UpdateReview"
 
 
@@ -14,6 +14,7 @@ function Review(props) {
       const airtableUrl = `${baseUrl}/reviews/${props.review.id}`
       await axios.delete(airtableUrl)
       props.fetchReview((prevFetchReviews) => !prevFetchReviews)
+      // props.setReviews((prevReviews)=> [...prevReviews, newReview])
       console.log(props.setFetchReviews);
       setDeleted(false)
     }, 1500)

@@ -34,7 +34,7 @@ function UpdateReview(props) {
         type="text"
         placeholder="Game Title"
         value={gameTitle}
-        onchange={(e)=> setgameTitle(e.target.value)}
+        onChange={(e)=> setgameTitle(e.target.value)}
       />
       <label htmlFor="review">Review:</label>
       <input
@@ -42,7 +42,7 @@ function UpdateReview(props) {
         type="text"
         placeholder="review"
         value={review}
-        onchange={(e)=> setReview(e.target.value)}
+        onChange={(e)=> setReview(e.target.value)}
       />
       <label htmlFor="author">Author:</label>
       <input
@@ -50,7 +50,7 @@ function UpdateReview(props) {
         type="text"
         placeholder="your name"
         value={author}
-        onchange={(e)=> setAuthor(e.target.value)}
+        onChange={(e)=> setAuthor(e.target.value)}
       />
       <button type="submit">Review</button>
     </form>
