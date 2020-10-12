@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import axios from "axios"
-import CreatReview from "./CreateReview"
 import { baseUrl } from "./constants"
 
 
@@ -24,11 +23,11 @@ return (
     <h4>{props.review.fields.text}</h4>
     <h5>{props.review.fields.author}</h5>
     <button onClick={handleDelete}>{deleted ? "Delete" : "Deleted"}</button>
-    {/* <UpdateReview
+    <UpdateReview
       review={props.review}
       fetchReviews={props.fetchReviews}
       setFetchReviews={props.setFetchReviews}
-    /> */}
+    />
   </div>
 );
 }
