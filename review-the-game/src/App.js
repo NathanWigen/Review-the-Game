@@ -71,6 +71,7 @@ import "./App.css";
           {reviews.map((review) => <Review review={review}/>)}
         </div>
       </Route>
+      <footer className="footer">Website Made By:Nathan Wigen</footer>
     </div>
   );
 }
