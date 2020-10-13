@@ -51,7 +51,7 @@ import CreateReview from "./CreateReview";
     <div className="App">
       <header className="header">Review Your Game</header>
       <nav>
-        <CreateReview />
+        <CreateReview setFetchReviews={setFetchReviews}/>
       </nav>
       <Route exact path="/">
         <label className="user">Username:</label>
@@ -71,7 +71,7 @@ import CreateReview from "./CreateReview";
       <Route path="/review">
         <h2>{username}</h2>
         <div className="review-container">
-          {reviews.map((review) => <Review review={review}setFetchReviews={setFetchReviews}/>)}
+          {reviews.map((review) => <Review key={review.id} review={review} setFetchReviews={setFetchReviews}/>)}
         </div>
       </Route>
       <footer className="footer">Website Made By:Nathan Wigen</footer>

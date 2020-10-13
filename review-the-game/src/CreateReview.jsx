@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
 import axios from "axios"
-import { useState } from "react"
 
 function CreateReview(props) {
   const [gameTitle, setGameTitle] = useState("")
@@ -20,7 +19,7 @@ function CreateReview(props) {
         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
       }
     })
-    props.setFetchReviews(!props.fetchReviews)
+    props.setFetchReviews(prevFetchReviews=>!prevFetchReviews)
 
     setGameTitle("")
     setReview("")
