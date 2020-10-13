@@ -12,7 +12,7 @@ function Review(props) {
     setTimeout(async () => {
       const airtableUrl = `${baseUrl}/${props.review.id}`
       await axios.delete(airtableUrl, config)
-      props.fetchReview((prevFetchReviews) => !prevFetchReviews)
+      props.setFetchReviews((prevFetchReviews) => !prevFetchReviews)
       setDeleted(false)
     }, 1500)
   }

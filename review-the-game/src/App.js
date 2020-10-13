@@ -67,7 +67,7 @@ import "./App.css";
       <Route path="/review">
         <h2>{username}</h2>
         <div className="review-container">
-          {reviews.map((review) => <Review review={review}/>)}
+          {reviews.map((review) => <Review review={review}setFetchReviews={setFetchReviews}/>)}
         </div>
       </Route>
       <footer className="footer">Website Made By:Nathan Wigen</footer>

@@ -3,7 +3,7 @@ import {baseUrl} from "./constants"
 import axios from "axios"
 
 function UpdateReview(props) {
-  const [gameTitle, setgameTitle] = useState(props.review.fields.gameTitle)
+  const [gameTitle, setGameTitle] = useState(props.review.fields.gameTitle)
   const [review, setReview] = useState(props.review.fields.review)
   const [author, setAuthor] = useState(props.review.fields.author)
 
@@ -35,7 +35,7 @@ function UpdateReview(props) {
         type="text"
         placeholder="Game Title"
         value={gameTitle}
-        onChange={(e)=> setgameTitle(e.target.value)}
+        onChange={(e)=> setGameTitle(e.target.value)}
       />
       <label htmlFor="review">Review:</label>
       <input

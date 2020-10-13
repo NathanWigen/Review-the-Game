@@ -3,7 +3,7 @@ import axios from "axios"
 import { useState } from "react"
 
 function CreateReview(props) {
-  const [gameTitle, setgameTitle] = useState("")
+  const [gameTitle, setGameTitle] = useState("")
   const [review, setReview] = useState("")
   const [author, setAuthor] = useState("")
   
@@ -21,7 +21,7 @@ function CreateReview(props) {
       }
     })
     props.setFetchReviews(!props.fetchReviews)
-    setgameTitle("")
+    setGameTitle("")
     setReview("")
     setAuthor("")
   }
@@ -29,7 +29,7 @@ function CreateReview(props) {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="game title">Game Title:</label>
-      <input name="game title" type="text" value={gameTitle} onChange={(e) => setgameTitle(e.target.value)} />
+      <input name="game title" type="text" value={gameTitle} onChange={(e) => setGameTitle(e.target.value)} />
       <label htmlFor="review">Review:</label>
       <input name="review" type="text" value={review} onChange={(e) => setReview(e.target.value)} />
       <label htmlFor="author">Author:</label>
