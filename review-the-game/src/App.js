@@ -35,7 +35,7 @@ import "./App.css";
     if (username) {
       history.push('/review');
     }
-  }, []);
+  }, [history, username]);
   const takeMeThere = () => {
     if (userPasswordInput.length < 6) {
       alert("You need to input more than six numbers");
