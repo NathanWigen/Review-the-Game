@@ -6,13 +6,12 @@ import UpdateReview from "./UpdateReview"
 
 function Review(props) {
   const [deleted, setDeleted] = useState(false)
-  const baseUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}`
   
   const handleDelete = async () => {
     setDeleted(true)
     setTimeout(async () => {
-      const airtableUrl = `${baseUrl}/reviews/${props.review.id}`
-      await axios.delete(airtableUrl)
+      const airtableUrl = `${baseUrl}/${props.review.id}`
+      await axios.delete(airtableUrl, config)
       props.fetchReview((prevFetchReviews) => !prevFetchReviews)
       setDeleted(false)
     }, 1500)
@@ -24,7 +23,7 @@ return (
     <h3>{props.review.fields.gameTitle}</h3>
     <h4>{props.review.fields.review}</h4>
     <h5>{props.review.fields.author}</h5>
-    <button onClick={handleDelete}>{deleted ? "Deleted" : "Delete"}</button>
+    <button disabled={deleted} onClick={handleDelete}>{deleted ? "Deleted" : "Delete"}</button>
     <UpdateReview
       review={props.review}
       fetchReviews={props.fetchReviews}

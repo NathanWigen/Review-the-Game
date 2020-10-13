@@ -2,8 +2,7 @@
 //This code is from Soleli.
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Route, Switch, Link, useHistory } from "react-router-dom";
-// import CreateReview from './CreateReview'
+import { Route, useHistory } from "react-router-dom";
 import { baseUrl } from "./constants";
 import Review from "./Review";
 import "./App.css";

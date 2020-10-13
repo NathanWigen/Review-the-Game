@@ -1,4 +1,5 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
+import {baseUrl} from "./constants"
 import axios from "axios"
 
 function UpdateReview(props) {
@@ -13,7 +14,7 @@ function UpdateReview(props) {
       review,
       author
     }
-    const airtableUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/reviews/${props.review.id}`
+    const airtableUrl = `${baseUrl}/${props.review.id}`
     await axios.put(
       airtableUrl,
       { fields },
