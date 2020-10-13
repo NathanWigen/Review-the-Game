@@ -14,13 +14,14 @@ function CreateReview(props) {
       review,
       author,
     }
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/reviews`;
+    const airtableUrl = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/reviews`;
     await axios.post(airtableUrl, { fields }, {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
       }
     })
     props.setFetchReviews(!props.fetchReviews)
+
     setGameTitle("")
     setReview("")
     setAuthor("")
@@ -34,7 +35,7 @@ function CreateReview(props) {
       <input name="review" type="text" value={review} onChange={(e) => setReview(e.target.value)} />
       <label htmlFor="author">Author:</label>
       <input name="author" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} />
-      <button type="submit">Send Review</button>
+      <button type="submit">Submit Review</button>
     </form> 
   )
 }

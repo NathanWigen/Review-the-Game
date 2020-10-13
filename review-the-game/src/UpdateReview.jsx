@@ -24,7 +24,7 @@ function UpdateReview(props) {
         },
       }
     )
-    props.FetchReviews(!props.fetchReviews)
+    props.setFetchReviews(!props.fetchReviews)
   }
 
   return (

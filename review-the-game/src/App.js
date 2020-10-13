@@ -6,6 +6,7 @@ import { Route, useHistory } from "react-router-dom";
 import { baseUrl } from "./constants";
 import Review from "./Review";
 import "./App.css";
+import CreateReview from "./CreateReview";
   function App() {
     const [reviews, setReview] = useState([]);
     const [fetchReviews, setFetchReviews] = useState(false);
@@ -48,14 +49,17 @@ import "./App.css";
   };
   return (
     <div className="App">
-      <header>Review Your Game</header>
+      <header className="header">Review Your Game</header>
+      <nav>
+        <CreateReview />
+      </nav>
       <Route exact path="/">
-        <label>Username:</label>
+        <label className="user">Username:</label>
         <input
           value={usernameInput}
           onChange={(e) => setUsernameInput(e.target.value)}
         />
-        <label>Password:</label>
+        <label className="password">Password:</label>
         <input
           value={userPasswordInput}
           maxLength={6}
