@@ -38,6 +38,13 @@ header,footer{
 }
 
 
+
+@media only screen and (max-width: 1024px) {
+  .App {
+    background-image: linear-gradient(to bottom right, red, gray);
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .App {
     background-image: linear-gradient(to bottom right,purple,blue );
@@ -49,10 +56,5 @@ header,footer{
   header,footer{
     width: 200px;
     margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .App {
-    background-image: linear-gradient(to bottom right, red, gray);
   }
 }
