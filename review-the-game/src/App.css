@@ -1,20 +1,33 @@
 .App {
   text-align: center;
   background-image: linear-gradient(to bottom right, blue, yellow);
+  min-height: 100vh;
 }
 
 header,footer{
-  font-size: large;
+  font-size: 30px;
   border: 5px solid black;
-  width: 850px;
+  width: 870px;
   margin: 0 auto;
 } 
+
+.review-container{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.user-div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .review{
   width: 850px;
   border: 5px solid black;
   padding: 10px;
-  margin: 100px 100px 100px 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 .footer{
@@ -27,19 +40,19 @@ header,footer{
 
 @media only screen and (max-width: 800px) {
   .App {
-    background-image: linear-gradient(to bottom right,purple,#0fe440 );
+    background-image: linear-gradient(to bottom right,purple,blue );
   }
-  /* .review{
+  .review{
     width: 200px;
     margin: 0 auto;
   }
   header,footer{
     width: 200px;
     margin: 0 auto;
-  } */
+  }
 }
 @media only screen and (max-width: 600px) {
   .App {
-    background-image: linear-gradient(to bottom right, red, green);
+    background-image: linear-gradient(to bottom right, red, gray);
   }
 }
