@@ -1,9 +1,13 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to bottom right, blue, yellow);
 }
 
 header,footer{
-  border: 1px solid black;
+  font-size: large;
+  border: 5px solid black;
+  width: 850px;
+  margin: 0 auto;
 } 
 
 .review{
@@ -20,28 +24,22 @@ header,footer{
   margin: 100px 100px 100px 500px;
 }
 
- /* .layout{
-  display: grid;
-  grid-template-areas: 
-  "header header header header header header"
-  "header header header header header header"
-  "CreateReview CreateReview CreateReview  CreateReview CreateReview CreateReview"
-  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
-  ""
-  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
-  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
-  ""
-  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
-  " CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
-  ""
-  ""
-  ""
-  ""
-  ""
-  ""
-  ""
-  ""
-  ""
-  "footer footer footer footer footer footer"
-  "footer footer footer footer footer footer"
-} */
+
+@media only screen and (max-width: 800px) {
+  .App {
+    background-image: linear-gradient(to bottom right,purple,#0fe440 );
+  }
+  /* .review{
+    width: 200px;
+    margin: 0 auto;
+  }
+  header,footer{
+    width: 200px;
+    margin: 0 auto;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    background-image: linear-gradient(to bottom right, red, green);
+  }
+}
