@@ -2,3 +2,35 @@
   text-align: center;
 }
 
+header,.login,.review,footer{
+  border: 1px solid black;
+} 
+
+
+
+
+ /* .layout{
+  display: grid;
+  grid-template-areas: 
+  "header header header header header header"
+  "header header header header header header"
+  "CreateReview CreateReview CreateReview  CreateReview CreateReview CreateReview"
+  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
+  ""
+  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
+  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
+  ""
+  "CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
+  " CreateReview CreateReview CreateReview CreateReview CreateReview CreateReview"
+  ""
+  ""
+  ""
+  ""
+  ""
+  ""
+  ""
+  ""
+  ""
+  "footer footer footer footer footer footer"
+  "footer footer footer footer footer footer"
+} */

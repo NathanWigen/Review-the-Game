@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Route} from "react-router-dom";
+import { Route } from "react-router-dom";
 import { baseUrl } from "./constants";
 import Review from "./Review";
 import Footer from "./Footer"
@@ -15,8 +15,6 @@ import "./App.css";
   function App() {
     const [reviews, setReview] = useState([]);
     const [fetchReviews, setFetchReviews] = useState(false);
-    // const [username, setUsername] = useState(localStorage.getItem("username"));
-    // const [usernameInput, setUsernameInput] = useState("");
 
   useEffect(() => {
     const getReview = async () => {
@@ -32,36 +30,20 @@ import "./App.css";
   }, [fetchReviews]);
     
   
-  // const history = useHistory();
-  // useEffect(() => {
-  //   if (username) {
-  //     history.push('/review');
-  //   }
-  // }, [history, username]);
-  // const takeMeThere = () => {
-  //   localStorage.setItem("username", usernameInput);
-  //   setUsername(usernameInput);
-  //   history.push("/review");
-  // };
+  
   return (
     <div className="App">
-      <Header />
+      <Header className="header"/>
       <Route exact path="/">
-        <Login />
-        {/* <label className="user">Username:</label>
-        <input
-          value={usernameInput}
-          onChange={(e) => setUsernameInput(e.target.value)}
-        /> */}
-        {/* <button onClick={takeMeThere}>Submit</button> */}
+        <Login className="login"/>
       </Route>
       <Route path="/review">
         <div className="review-container">
           {reviews.map((review) => <Review key={review.id} review={review} setFetchReviews={setFetchReviews} />)}
-          <CreateReview setFetchReviews={setFetchReviews}/>
+          <CreateReview setFetchReviews={setFetchReviews} className="review"/>
         </div>
       </Route>
-      <Footer />
+      <Footer className="footer"/>
     </div>
   );
 }

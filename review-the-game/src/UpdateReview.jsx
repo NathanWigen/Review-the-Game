@@ -53,7 +53,6 @@ function UpdateReview(props) {
         value={author}
         onChange={(e)=> setAuthor(e.target.value)}
       />
-      <button type="submit">Review</button>
     </form>
   )
 }
