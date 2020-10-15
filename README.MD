@@ -55,10 +55,10 @@ This website will allow you to review a video game then send the users review to
 |---|---| ---|
 |July 9| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 10| Project Approval | Complete
-|July 11| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 12| Pseudocode / actual code | Incomplete
-|July 13| Initial Clickable Model  | Incomplete
-|July 14| MVP | Incomplete
+|July 11| Core Application Structure (HTML, CSS, etc.) | Complete
+|July 12| Pseudocode / actual code | Complete
+|July 13| Initial Clickable Model  | Complete
+|July 14| MVP | Complete
 |July 15| Presentations | Incomplete
 
 ## Timeframes
