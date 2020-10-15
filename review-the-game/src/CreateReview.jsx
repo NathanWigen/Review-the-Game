@@ -27,7 +27,7 @@ function CreateReview(props) {
   }
   
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="update-form" onSubmit={handleSubmit}>
       <label htmlFor="game title">Game Title:</label>
       <input name="game title" type="text" value={gameTitle} onChange={(e) => setGameTitle(e.target.value)} />
       <label htmlFor="review">Review:</label>

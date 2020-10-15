@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right, blue, yellow);
   min-height: 100vh;
 }
 
@@ -14,6 +13,11 @@ header,footer{
 .review-container{
   margin-top: 10px;
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .user-div{
@@ -22,12 +26,15 @@ header,footer{
 }
 
 .review{
-  width: 850px;
   border: 5px solid black;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin: 0 auto;
+}
+
+.update-form{
+  display: flex;
+  flex-direction: column;
 }
 
 .footer{
@@ -39,16 +46,27 @@ header,footer{
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2560px) {
   .App {
-    background-image: linear-gradient(to bottom right, red, gray);
+    background-image: linear-gradient(to bottom right, blue, yellow);
   }
+  .review-container{
+    grid-template-columns: repeat(3, 1fr);
+    width: 50vw;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
   .App {
     background-image: linear-gradient(to bottom right,purple,blue );
   }
+
+  .review-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80vw;
+  }
+
   .review{
     width: 200px;
     margin: 0 auto;

@@ -40,8 +40,8 @@ import "./App.css";
       <Route path="/review">
         <div className="review-container">
           {reviews.map((review) => <Review key={review.id} review={review} setFetchReviews={setFetchReviews} />)}
-          <CreateReview setFetchReviews={setFetchReviews} />
         </div>
+          <CreateReview setFetchReviews={setFetchReviews}/>
       </Route>
       <Footer className="footer"/>
     </div>
