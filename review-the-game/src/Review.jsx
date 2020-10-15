@@ -14,7 +14,7 @@ return (
       review={props.review}
       fetchReviews={props.fetchReviews}
       setFetchReviews={props.setFetchReviews}/>
-    <UpdateReview
+    <UpdateReview className="update-form"
       review={props.review}
       fetchReviews={props.fetchReviews}
       setFetchReviews={props.setFetchReviews}

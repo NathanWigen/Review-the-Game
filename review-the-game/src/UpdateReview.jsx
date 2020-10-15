@@ -28,7 +28,7 @@ function UpdateReview(props) {
   }
 
   return (
-    <form className="update-form" onSubmit={handleSubmit}>
+    <form className="creat-form" onSubmit={handleSubmit}>
       <label htmlFor="Game Title">Game Title:</label>
       <input
         name="Game Title"

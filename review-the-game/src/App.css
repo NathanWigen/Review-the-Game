@@ -25,6 +25,16 @@ header,footer{
   margin-bottom: 10px;
 }
 
+.create-from{
+  display: flex;
+  flex-direction: column;
+}
+
+.update-form{
+  margin-left: 500px;
+  margin-right: 500px
+}
+
 .review{
   border: 5px solid black;
   padding: 10px;
@@ -32,10 +42,6 @@ header,footer{
   margin-bottom: 10px;
 }
 
-.update-form{
-  display: flex;
-  flex-direction: column;
-}
 
 .footer{
   width: 850px;
