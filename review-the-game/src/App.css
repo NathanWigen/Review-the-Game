@@ -37,9 +37,12 @@ header,footer{
 }
 
 .review{
-  border: 5px solid black;
+  color: limegreen;
+  background-color: black;
+  border: 3px solid whitesmoke;
   padding: 10px;
   margin-top: 10px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
 
