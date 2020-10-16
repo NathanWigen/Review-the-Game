@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  /* max-width: 100vw; */
 }
 
 header,footer{
@@ -81,25 +82,32 @@ footer{
 }
 
 @media only screen and (max-width: 800px) {
-  .App {
+  .App{
     background-image: linear-gradient(to bottom right,purple,blue );
+    background-size: cover;
+    width: 100vw;
   }
+
+  /* .App{
+    background-image: unset;
+    } */
 
   .update-form{
     margin-left: 100px;
-    /* margin-right: 500px; */
     margin-bottom: 10px;
   }
 
   .review-container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     width: 80vw;
   }
 
   .review{
+
     width: 200px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
+
   header,footer{
     width: 200px;
     margin: 0 auto;
