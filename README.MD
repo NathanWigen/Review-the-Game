@@ -4,6 +4,10 @@
 
 Review the Game
 
+## Deployed Website
+
+https://distracted-chandrasekhar-f865bc.netlify.app
+
 ## Project Description
 
 This website will allow you to review a video game then send the users review to the Airtable then render the review on the page and any previous reviews will render to the page.
@@ -23,9 +27,9 @@ This website will allow you to review a video game then send the users review to
             "id": "recafmqU7i9BDPXws",
             "fields": {
                 "gameTitle": "Halo 3",
-                "Review": "The game is long but is full of action during the whole 40 hours it takes to beat all levels.",
-                "Author": "Nathan Wigen",
-                "Status": "2020-10-08T21:51:12.000Z"
+                "review": "The game is long but is full of action during the whole 40 hours it takes to beat all levels.",
+                "author": "Nathan Wigen",
+                "createdAt": "2020-10-08T21:51:12.000Z"
             },
             "createdTime": "2020-10-08T21:51:12.000Z"
         },
