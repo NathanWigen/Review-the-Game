@@ -38,8 +38,8 @@ header{
 }
 
 .update-form{
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 10px;
 }
 
@@ -86,8 +86,8 @@ footer{
   }
 
   .update-form{
-    margin-left: 300px;
-    margin-right: 500px;
+    margin-left: 100px;
+    /* margin-right: 500px; */
     margin-bottom: 10px;
   }
 
