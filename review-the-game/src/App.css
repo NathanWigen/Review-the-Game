@@ -85,6 +85,12 @@ footer{
     background-image: linear-gradient(to bottom right,purple,blue );
   }
 
+  .update-form{
+    margin-left: 300px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+  }
+
   .review-container{
     grid-template-columns: repeat(2, 1fr);
     width: 80vw;
